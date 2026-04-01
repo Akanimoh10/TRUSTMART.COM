@@ -9,12 +9,20 @@
 <body>
     <header>
         <nav>
+            <div class="auth-buttons">
+                <button class="signin">Sign In</button>
+                <button class="signup">Sign Up</button>
+            </div>
             <h2 class="logo">TRUSTMART</h2>
 
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">MyCart</a></li>
                 <li><a href="#">Help</a></li>
+
+                <!-- Mobile auth -->
+                <li class="mobile-auth"><button class="signin">Sign In</button></li>
+                <li class="mobile-auth"><button class="signup">Sign Up</button></li>
             </ul>
 
             <button class="theme-toggle">🌙</button>
@@ -36,28 +44,28 @@
             <div class="product-card">
                 <img src="Images/TV.jpg" class="p-img">
                 <h4>LG 65inch UHD SMART TV</h4>
-                <p>$120</p>
+                <p>₦950,000</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product-card">
                 <img src="Images/scanfrost-600-liters-inverter-chest-freezer.webp" class="p-img">
                 <h4>SCANFROST 600 LITRES INVERTER CHEST FREEZER</h4>
-                <p>$120</p>
+                <p>₦750,000 </p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product-card">
                 <img src="Images/AC.jpg" class="p-img">
                 <h4>LG 1.5HP AIR CONDITIONER + INVERTER</h4>
-                <p>$40</p>
+                <p>₦450,000</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product-card">
                 <img src="Images/refrigerator.jpg" class="p-img">
                 <h4>SAMSUNG SMART REFRIGERATOR</h4>
-                <p>$60</p>
+                <p>₦1,200,000</p>
                 <button>Add to Cart</button>
             </div>
 
@@ -71,7 +79,10 @@
                     <img src="Images/HISENSE 8KG WASHING MACHINE.png" class="p-img">
                     <h4>HISENSE 8KG WASHING MACHINE</h4>
                     <div class="rating">⭐⭐⭐⭐☆</div>
-                    <p>$35</p>
+                    <div class="price">
+                        <span class="old-price">₦400,000</span>
+                        <span class="new-price">₦320,000</span>
+                    </div>
                     <button>Add to Cart</button>
                 </div>
 
@@ -80,7 +91,10 @@
                     <img src="Images/FTV.jpg" class="p-img">
                     <h4>HISENSE 60inch SMART TV</h4>
                     <div class="rating">⭐⭐⭐⭐⭐</div>
-                    <p>$35</p>
+                    <div class="price">
+                        <span class="old-price">₦650,000</span>
+                        <span class="new-price">₦520,000</span>
+                    </div>
                     <button>Add to Cart</button>
                 </div>
 
@@ -89,7 +103,10 @@
                     <img src="Images/FF.jpg" class="p-img">
                     <H4>HISENSE DOUBLE DOOR SMART REFRIGERATOR</H4>
                     <div class="rating">⭐⭐⭐⭐⭐</div>
-                    <p>$35</p>
+                    <div class="price">
+                        <span class="old-price">₦500,000</span>
+                        <span class="new-price">₦400,000</span>
+                    </div>
                     <button>Add to Cart</button>
                 </div>
 
@@ -98,7 +115,58 @@
                     <img src="Images/FAC.jpg" class="p-img">
                     <h4>HISENSE 1.5HP AIR CONDITIONER + INVERTER</h4>
                     <div class="rating">⭐⭐⭐⭐☆</div>
-                    <p>$35</p>
+                    <div class="price">
+                        <span class="old-price">₦420,000</span>
+                        <span class="new-price">₦336,000</span>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">-20%</span>
+                    <img src="Images/HISENSE 8KG WASHING MACHINE.png" class="p-img">
+                    <h4>HISENSE 8KG WASHING MACHINE</h4>
+                    <div class="rating">⭐⭐⭐⭐☆</div>
+                    <div class="price">
+                        <span class="old-price">₦400,000</span>
+                        <span class="new-price">₦320,000</span>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">-20%</span>
+                    <img src="Images/FTV.jpg" class="p-img">
+                    <h4>HISENSE 60inch SMART TV</h4>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price">
+                        <span class="old-price">₦650,000</span>
+                        <span class="new-price">₦520,000</span>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">-20%</span>
+                    <img src="Images/FF.jpg" class="p-img">
+                    <H4>HISENSE DOUBLE DOOR SMART REFRIGERATOR</H4>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <div class="price">
+                        <span class="old-price">₦500,000</span>
+                        <span class="new-price">₦400,000</span>
+                    </div>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <span class="badge">-20%</span>
+                    <img src="Images/FAC.jpg" class="p-img">
+                    <h4>HISENSE 1.5HP AIR CONDITIONER + INVERTER</h4>
+                    <div class="rating">⭐⭐⭐⭐☆</div>
+                    <div class="price">
+                        <span class="old-price">₦420,000</span>
+                        <span class="new-price">₦336,000</span>
+                    </div>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -107,28 +175,56 @@
             <div class="product-card">
                 <img src="Images/SPHONE.jpg" class="p-img">
                 <h4>SAMSUNG GALAXY S25 ULTRA</h4>
-                <p>$35</p>
+                <p>₦2,100,000</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product-card">
                 <img src="Images/IPHONE.jpg" class="p-img">
                 <h4>IPHONE 17 PRO MAX</h4>
-                <p>$35</p>
+                <p>₦2,300,000</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product-card">
                 <img src="Images/GPHONE.jpg" class="p-img">
                 <h4>GOOGLE PIXEL 10 PRO</h4>
-                <p>$35</p>
+                <p>₦1,600,000</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product-card">
                 <img src="Images/RED MAGIC 11 PRO.jpg" class="p-img">
                 <h4>RED MAGIC 11 PRO</h4>
-                <p>$35</p>
+                <p>₦1,300,000</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/SONY PLAYSTATION 5 PRO.jpg" class="p-img">
+                <h4>SONY PLAYSTATION 5 PRO</h4>
+                <p>₦1,100,000</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/SONY PLAYSTATION 4.jpg" class="p-img">
+                <h4>SONY PLAYSTATION 4</h4>
+                <p>₦200,000</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/SONY PLAYSTATION 4 PRO.jpg" class="p-img">
+                <h4>SONY PLAYSTATION 4 PRO</h4>
+                <p>₦320,000</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/SONY PLAYSTATION 4 - LIMITED EDITION.jpg" class="p-img">
+                <h4>SONY PLAYSTATION 4 - LIMITED EDITION</h4>
+                <p>₦400,000</p>
                 <button>Add to Cart</button>
             </div>
         

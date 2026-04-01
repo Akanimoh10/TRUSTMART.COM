@@ -7,16 +7,17 @@
 
 /* THEME */
 :root {
-    --primary: #034694;
+    --primary: #072fb1;
     --bg: #f5f7fa;
     --text: #111;
     --card: #ffffff;
 }
 
 body.dark {
-    --bg: #0f172a;
+    --bg: #000000;
     --text: #e5e7eb;
     --card: #1e293b;
+    --border: #fff;
 }
 
 /* BODY */
@@ -79,6 +80,42 @@ nav {
     cursor: pointer;
 }
 
+/* LEFT SIDE BUTTONS */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* SIGN IN (outline style) */
+.signin {
+    padding: 6px 12px;
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* SIGN UP (filled - more important) */
+.signup {
+    padding: 6px 12px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* HOVER EFFECT */
+.signin:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.signup:hover {
+    opacity: 0.9;
+}
+
 /* HERO */
 .hero {
     text-align: center;
@@ -123,7 +160,7 @@ nav {
 }
 .flash-sale {
     grid-column: 1 / -1;
-    background: #034694;
+    background: #072fb1;
     padding: 20px;
     border-radius: 10px;
     color: #ffffff;
@@ -169,6 +206,7 @@ nav {
     background: var(--card);
     padding: 15px;
     border-radius: 10px;
+    border: 1px solid black;
     transition: 0.3s;
     gap: 10px;
     display: flex;
@@ -193,7 +231,7 @@ nav {
     font-size: 14px;
     margin: 10px 0;
     color: var(--text);
-    min-height: 40px;
+    min-height: 10px;
 }
 
 .product-card p {
@@ -212,6 +250,28 @@ nav {
     margin-top: auto;
 }
 
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 13px;
+}
+
+.new-price {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.mobile-auth {
+    display: none;
+}
 /* MOBILE */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -231,5 +291,13 @@ nav {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .auth-buttons {
+        display: none; /* 👈 hide from header */
+    }
+
+    .mobile-auth {
+        display: block;
     }
 }
